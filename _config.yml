@@ -1,0 +1,49 @@
+# 사이트 기본 설정
+title: Smiles Life - 호기심 해결
+description: Smiles Life의 흥미로운 호기심 해결 이야기
+url: "https://smileslife.co.kr"
+
+# 테마 설정 (여기서 디자인이 결정됩니다)
+theme: minima
+
+# 부가 설정 (선택 사항)
+permalink: /:categories/:title/
+
+# 페이지네이션(자동 번호 매기기) 설정
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag    # 검색엔진용 메타 태그 자동 생성
+  - jekyll-sitemap    # sitemap.xml 자동 생성
+  - jekyll-feed       # feed.xml (RSS) 자동 생성
+  - jekyll-redirect-from
+
+paginate: 20
+paginate_path: "/why/page:num/"
+
+# 상단 메뉴에 페이지 자동 추가 방지
+header_pages:
+  - index.html
+
+# ----------------------------------------------------------------
+# [추가된 부분] 언어별 사이트 타이틀 및 설명 설정
+# ----------------------------------------------------------------
+titles:
+  ko: "Smiles Life - 호기심 해결"
+  en: "Smiles Life - Curiosity Solved"
+  ja: "Smiles Life - 好奇心解決"
+  zh-TW: "Smiles Life - 滿足好奇心"
+  es: "Smiles Life - Curiosidades Resueltas"
+
+descriptions:
+  ko: "Smiles Life의 흥미로운 호기심 해결 이야기"
+  en: "Interesting stories of solving curiosity from Smiles Life"
+  ja: "Smiles Lifeの 興味深い好奇心解決の物語"
+  zh-TW: "Smiles Life 那些有趣的滿足好奇心故事"
+  es: "Historias interesantes sobre la resolución de curiosidades de Smiles Life"
+
+random_post_titles:
+  ko: "🎲 다른 흥미로운 이야기도 확인해 보세요!"
+  en: "🎲 Check out other interesting stories!"
+  ja: "🎲 他の興味深い話도 체크해보세요!"
+  zh-TW: "🎲 看看其他有趣的故事吧！"
+  es: "🎲 ¡Mira otras historias interesantes!"
