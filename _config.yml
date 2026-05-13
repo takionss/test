@@ -18,7 +18,7 @@ plugins:
   - jekyll-redirect-from
 
 paginate: 20
-paginate_path: "/why/page:num/"
+paginate_path: "/page:num/"
 
 # 상단 메뉴에 페이지 자동 추가 방지
 header_pages:
