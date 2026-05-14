@@ -14,6 +14,12 @@ body {
   background-color: #ffffff;
   border-bottom: 1px solid #eee;
   box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  position: relative; /* 추가: z-index가 동작하도록 설정 */
+  z-index: 1000;       /* 추가: 다른 컨텐츠보다 항상 위에 위치 */
+}
+
+.site-nav {
+  z-index: 1001;      /* 추가: 모바일 메뉴가 최상단에 뜨도록 보장 */
 }
 
 .site-title {
